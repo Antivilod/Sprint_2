@@ -32,11 +32,9 @@ class Hockey(Results):
         points = 2 * self.victories + self.draws
         return f"Общее количество очков: {points}"
 
-# Создание объектов
 football_team = Football(2, 2, 2)
 hockey_team = Hockey(2, 2, 2)
 
-# Вызов методов в цикле
 for team in (football_team, hockey_team):
     print(team.number_of_wins())
     print(team.number_of_draws())
